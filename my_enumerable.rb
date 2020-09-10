@@ -30,4 +30,28 @@ module MyEnumerable
         end
         result
     end
+    #parameter to find method
+    def find_all
+        
+    end
+    def reduce
+        
+    end
+    def collect
+        
+    end
+
+    def sort
+
+        
+    end
+    def max
+
+        
+    end
+
+    def min
+        
+        
+    end
 end
