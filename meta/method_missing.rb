@@ -1,0 +1,17 @@
+class Numeric
+
+    @@currencies = {yen: 1.55,euro: 0.013,usd: 0.014}
+    def method_missing(method_name,*args,&block)
+        puts "#{method_name} not found"
+
+        if @@currencies.has_key?(method_name)
+        self / @@currencies[method_name]
+        else
+            super
+        end
+        
+    end
+end
+
+puts 3.usd
+puts 3.euro
