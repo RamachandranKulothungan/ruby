@@ -2,7 +2,7 @@ module MyEnumerable
     def map(&block)
        result = []
        each do |ele|
-        result << (ele) 
+        result << ele
        end
        result
     end
@@ -25,8 +25,7 @@ module MyEnumerable
         result = nil
         each do |ele|
             if block.call(ele)
-                result = ele
-                break
+                result << ele
             end
         end
         result
