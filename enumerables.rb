@@ -39,3 +39,8 @@ end
 p "Found #{found}"
 p mumbau.map
 p mumbau.select {|snack| snack.downcase.include?("v")}
+p mumbau.sort
+p mumbau.max
+p mumbau.min
+p mumbau.zip(mumbau)
+p mumbau.class.to_s
